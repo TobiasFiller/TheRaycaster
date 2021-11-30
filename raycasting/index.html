@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2DRaycasting</title>
+    <style>
+        body{
+            background-color: black;
+            text-align: center;
+        }
+        p {
+            color: white;
+        }
+        h1{
+            color: yellow;
+            font-family: sans-serif;
+            font-size: 240%;
+            text-shadow: 0 0 20px #FFFFFF;
+        }
+        canvas{
+            border-color: yellow;
+            border-style: dotted;
+        }
+    </style>
+</head>
+<body>
+<h1>Raycaster - the Game</h1>
+<canvas></canvas>
+<p>Movement speed: <input type="range" min="1" max="10" value="2" class="slider" id="moveSpeed"></p>
+<p>Show walls: <input type="checkbox" id="showWalls"> Show hitbox <input type="checkbox" id="showHitbox"></p>
+<p>Light Range: <input type="range" min="1" max="1000" value="50" class="slider" id="LightRange"></p>
+
+
+<script src="fillerLibrary.js"></script>
+<script src="hero.js"></script>
+<script src="boundary.js"></script>
+<script src="ray.js"></script>
+<script src="particle.js"></script>
+<script src="entity.js"></script>
+<script src="player.js"></script>
+<script src="sketch.js" ></script>
+</body>
+</html>
